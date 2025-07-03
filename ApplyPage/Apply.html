@@ -1,0 +1,279 @@
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>التقديم - My Homeschool Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../HomePage/footer.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Section 1: Top Bar -->
+  <div class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
+    <div class="flex items-center space-x-4 space-x-reverse">
+      <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
+        <i class="fas fa-home text-xs sm:text-sm"></i>
+        <a href="../HomePage/HomePage.html"><span>الرئيسية</span></a>
+      </span>
+      <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
+        <i class="fas fa-phone-alt text-xs sm:text-sm"></i>
+        <span>اتصل بنا ؟</span>
+      </span>
+    </div>
+    <div class="flex items-center space-x-2 space-x-reverse">
+      <i class="fas fa-search"></i>
+      <input aria-label="بحث عن الأكاديمية" class="rounded-md text-black text-xs sm:text-sm px-2 py-1 w-36 sm:w-48 focus:outline-none" placeholder="البحث عن الأكاديمية..." type="text" />
+    </div>
+    <div class="font-bold text-xs sm:text-sm tracking-widest">MY HOMESCHOOL ACADEMY</div>
+  </div>
+
+  <!-- Navigation bar -->
+  <nav class="flex items-center justify-center px-4 py-3 border-b border-gray-200 max-w-[1200px] mx-auto relative">
+    <ul class="flex items-center space-x-6 space-x-reverse text-sm sm:text-base font-semibold text-gray-700">
+      <li class="relative group cursor-pointer">
+        <span>عن الأكاديمية <i class="fas fa-chevron-down text-xs"></i></span>
+        <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+          <a href="#"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">من نحن</li></a>
+          <a href="#"><li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">الرؤية والرسالة</li></a>
+        </ul>
+      </li>
+      <li class="relative group cursor-pointer">
+        <span>المراحل الدراسية <i class="fas fa-chevron-down text-xs"></i></span>
+        <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الابتدائية</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الاعدادية</li>
+          <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">المرحلة الثانوية</li>
+        </ul>
+      </li>
+      <p style="color: blue;" class="relative group cursor-pointer"><span>التقديم</span></p>
+      <a href="../WorkPage/Work.html"><p class="relative group cursor-pointer"><span>الوظائف</span></p></a>
+    </ul>
+  </nav>
+
+  <div class="max-w-3xl mx-auto p-6">
+    <h1 class="text-3xl font-extrabold text-center text-blue-700 mb-8">صفحة التقديم</h1>
+    <form id="applicationForm" class="bg-gray-50 border border-gray-300 rounded-md p-6 shadow-sm" novalidate autocomplete="off" method="POST">
+      <input type="hidden" name="_subject" value="طلب تقديم جديد من الموقع" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <!-- Parent Info -->
+      <div class="mb-5">
+        <label for="fullName" class="block mb-2 font-semibold text-gray-700">الاسم الكامل (ولي الأمر)</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="أدخل اسمك الكامل" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <p id="fullNameError" class="text-red-600 text-sm mt-1 hidden">الرجاء إدخال الاسم الكامل.</p>
+      </div>
+      <div class="mb-5">
+        <label for="email" class="block mb-2 font-semibold text-gray-700"> دولة الأقامة</label>
+        <input type="email" id="email" name="email" required placeholder="e.g: Egypt" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <p id="emailError" class="text-red-600 text-sm mt-1 hidden">الرجاء إدخال دولة الأقامة الصحيحة.</p>
+      </div>
+      <div class="mb-5">
+        <label for="phone" class="block mb-2 font-semibold text-gray-700">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" required placeholder="مثال: 0123456789" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <p id="phoneError" class="text-red-600 text-sm mt-1 hidden">الرجاء إدخال رقم هاتف صحيح.</p>
+      </div>
+
+       <select name="studentStage" required class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="" disabled selected>اختر صلة القرابة </option>
+              <option value="أب">أب</option>
+              <option value="أم">أم</option>
+        </select>
+
+      <!-- Students Section -->
+      <div id="studentsContainer" class="mb-5 space-y-6">
+        <h2 class="text-xl font-bold text-gray-800 mb-3">بيانات الطالب/الطلاب</h2>
+
+        <div class="student-entry border border-gray-300 rounded-md p-4 relative">
+          <button type="button" class="removeStudentBtn absolute top-2 left-2 text-red-600 hover:text-red-800 hidden" aria-label="حذف طالب">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="mb-4">
+            <label class="block mb-1 font-semibold text-gray-700">اسم الطالب</label>
+            <input type="text" name="studentName" required placeholder="أدخل اسم الطالب" class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <p class="studentNameError text-red-600 text-sm mt-1 hidden">الرجاء إدخال اسم الطالب.</p>
+          </div>
+          <div class="mb-4">
+            <label class="block mb-1 font-semibold text-gray-700">المرحلة الدراسية</label>
+            <select name="studentStage" required class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="" disabled selected>اختر المرحلة الدراسية</option>
+              <option value="مرحلة كي جي">مرحلة كي جي</option>
+              <option value="المرحلة الابتدائية">المرحلة الابتدائية</option>
+              <option value="المرحلة الإعدادية">المرحلة الإعدادية</option>
+              <option value="المرحلة الثانوية">المرحلة الثانوية</option>
+            </select>
+            <p class="studentStageError text-red-600 text-sm mt-1 hidden">الرجاء اختيار المرحلة الدراسية.</p>
+          </div>
+          <div>
+            <label class="block mb-1 font-semibold text-gray-700">ملاحظات إضافية</label>
+            <textarea name="studentNotes" rows="2" placeholder="يمكنك كتابة أي ملاحظات أو استفسارات هنا" class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <button type="button" id="addStudentBtn" class="mb-6 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition">
+        إضافة طالب آخر
+      </button>
+
+      <button type="submit" class="w-full bg-blue-700 text-white font-bold py-3 rounded-md hover:bg-blue-800 transition-colors">إرسال الطلب</button>
+    </form>
+
+    <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md text-center font-semibold" role="alert">
+      تم إرسال الطلب بنجاح! شكرًا لتواصلك معنا.
+    </div>
+  </div>
+
+  <script>
+    const studentsContainer = document.getElementById("studentsContainer");
+    const addStudentBtn = document.getElementById("addStudentBtn");
+
+    // Function to create a new student entry form
+    function createStudentEntry() {
+      const div = document.createElement("div");
+      div.classList.add("student-entry", "border", "border-gray-300", "rounded-md", "p-4", "relative");
+
+      div.innerHTML = `
+        <button type="button" class="removeStudentBtn absolute top-2 left-2 text-red-600 hover:text-red-800" aria-label="حذف طالب">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="mb-4">
+          <label class="block mb-1 font-semibold text-gray-700">اسم الطالب</label>
+          <input type="text" name="studentName" required placeholder="أدخل اسم الطالب" class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <p class="studentNameError text-red-600 text-sm mt-1 hidden">الرجاء إدخال اسم الطالب.</p>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1 font-semibold text-gray-700">المرحلة الدراسية</label>
+          <select name="studentStage" required class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="" disabled selected>اختر المرحلة الدراسية</option>
+            <option value="مرحلة كي جي">مرحلة كي جي</option>
+            <option value="المرحلة الابتدائية">المرحلة الابتدائية</option>
+            <option value="المرحلة الإعدادية">المرحلة الإعدادية</option>
+            <option value="المرحلة الثانوية">المرحلة الثانوية</option>
+          </select>
+          <p class="studentStageError text-red-600 text-sm mt-1 hidden">الرجاء اختيار المرحلة الدراسية.</p>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold text-gray-700">ملاحظات إضافية</label>
+          <textarea name="studentNotes" rows="2" placeholder="يمكنك كتابة أي ملاحظات أو استفسارات هنا" class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+        </div>
+      `;
+
+      // Add event listener to remove button
+      div.querySelector(".removeStudentBtn").addEventListener("click", () => {
+        div.remove();
+        toggleRemoveButtons();
+      });
+
+      return div;
+    }
+
+    // Show or hide remove buttons depending on number of student entries
+    function toggleRemoveButtons() {
+      const studentEntries = studentsContainer.querySelectorAll(".student-entry");
+      studentEntries.forEach((entry, idx) => {
+        const btn = entry.querySelector(".removeStudentBtn");
+        if (studentEntries.length > 1) {
+          btn.classList.remove("hidden");
+        } else {
+          btn.classList.add("hidden");
+        }
+      });
+    }
+
+    addStudentBtn.addEventListener("click", () => {
+      const newStudent = createStudentEntry();
+      studentsContainer.appendChild(newStudent);
+      toggleRemoveButtons();
+      // Scroll to new student form
+      newStudent.scrollIntoView({ behavior: "smooth" });
+    });
+
+    // Initialize remove buttons visibility
+    toggleRemoveButtons();
+
+    // Form submission and validation
+    document.getElementById("applicationForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Hide all parent errors
+      document.getElementById("fullNameError").classList.add("hidden");
+      document.getElementById("emailError").classList.add("hidden");
+      document.getElementById("phoneError").classList.add("hidden");
+
+      // Hide all student errors
+      const studentNameErrors = this.querySelectorAll(".studentNameError");
+      const studentStageErrors = this.querySelectorAll(".studentStageError");
+      studentNameErrors.forEach(el => el.classList.add("hidden"));
+      studentStageErrors.forEach(el => el.classList.add("hidden"));
+
+      // Validate parent info
+      const fullName = this.fullName.value.trim();
+      const email = this.email.value.trim();
+      const phone = this.phone.value.trim();
+
+      let valid = true;
+
+      if (!fullName) {
+        document.getElementById("fullNameError").classList.remove("hidden");
+        valid = false;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailRegex.test(email)) {
+        document.getElementById("emailError").classList.remove("hidden");
+        valid = false;
+      }
+
+      const phoneRegex = /^\d{7,}$/;
+      if (!phone || !phoneRegex.test(phone)) {
+        document.getElementById("phoneError").classList.remove("hidden");
+        valid = false;
+      }
+
+      // Validate each student entry
+      const studentEntries = studentsContainer.querySelectorAll(".student-entry");
+      studentEntries.forEach((entry) => {
+        const studentNameInput = entry.querySelector('input[name="studentName"]');
+        const studentStageSelect = entry.querySelector('select[name="studentStage"]');
+        const studentNameError = entry.querySelector(".studentNameError");
+        const studentStageError = entry.querySelector(".studentStageError");
+
+        if (!studentNameInput.value.trim()) {
+          studentNameError.classList.remove("hidden");
+          valid = false;
+        }
+        if (!studentStageSelect.value) {
+          studentStageError.classList.remove("hidden");
+          valid = false;
+        }
+      });
+
+      if (!valid) return;
+
+      // If all valid, show success message and reset form
+      document.getElementById("successMessage").classList.remove("hidden");
+      this.reset();
+
+      // Remove all extra student entries except the first one
+      const allStudents = studentsContainer.querySelectorAll(".student-entry");
+      allStudents.forEach((entry, idx) => {
+        if (idx > 0) entry.remove();
+      });
+      toggleRemoveButtons();
+
+      // Scroll to success message
+      document.getElementById("successMessage").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
