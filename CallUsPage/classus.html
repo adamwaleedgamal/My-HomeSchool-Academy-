@@ -86,23 +86,19 @@
  <body class="bg-white text-black">
   <!-- Section 1: Top Bar, Nav, Hero -->
      <div  class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
-   <div class="flex items-center space-x-4 space-x-reverse">
-    <a href="../HomePage/HomePage.html"><span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
-     <i class="fas fa-home text-xs sm:text-sm">
-     </i>
-     <span>
-      الرئيسية
-     </span>
-    </span></a>
-    
-    <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
-     <i class="fas fa-phone-alt text-xs sm:text-sm">
-     </i>
-    <a href="../CallUsPage/classus.html"> <span>
-      اتصل بنا ؟
-     </span></a>
-    </span>
-   </div>
+   <div class="flex items-center gap-4 flex-wrap text-xs sm:text-sm font-semibold">
+  <a href="../HomePage/HomePage.html" class="flex items-center gap-1 hover:underline text-white">
+    <i class="fas fa-home"></i>
+    <span>الرئيسية</span>
+  </a>
+
+  <a href="../CallUsPage/classus.html" class="flex items-center gap-1 hover:underline text-white">
+    <i class="fas fa-phone-alt"></i>
+    <span>اتصل بنا ؟</span>
+  </a>
+</div>
+
+
    <div class="flex items-center space-x-2 space-x-reverse">
     <i class="fas fa-search">
     </i>
@@ -154,7 +150,8 @@
       </li>
      </ul>
     </li>
-    <a href="../ApplyPage/Apply.html"><P class="relative group cursor-pointer">
+    <a href="../ApplyPage/Apply.html">
+      <P class="relative group cursor-pointer">
      <span>
       التقديم
     </p>
@@ -175,11 +172,17 @@
       </li>
      </ul>
     </li> -->
-  </p></a>
-  <a href="../ProfilePage/Profile.html"><div class="flex-shrink-0 animate-bounce" style=" position: relative;left: 90vb ;top: 1vw;animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite;">
-    <img alt="شعار الأكاديمية - رمز مبنى أزرق داخل دائرة زرقاء" class="w-12 h-12 sm:w-14 sm:h-14" height="56" src="../HomePage/pics/logo-modified.png" width="56"/>
-   </div>
-  </a>
+  </p>
+</a>
+<a href="../ProfilePage/Profile.html">
+  <div class="animate-bounce relative top-1">
+    <img 
+      src="../HomePage/pics/logo-modified.png" 
+      alt="شعار الأكاديمية - رمز مبنى أزرق داخل دائرة زرقاء"
+      class="w-12 sm:w-12 md:w-12 lg:w-12 h-auto max-w-full" 
+    />
+  </div>
+</a>
   </nav>
 
   <!-- Contact Us Section -->

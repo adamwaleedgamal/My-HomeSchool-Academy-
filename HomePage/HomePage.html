@@ -82,25 +82,21 @@
     </style>
   </head>
   <body class="bg-white text-black">
-    <!-- Section 1: Top Bar, Nav, Hero -->
+<!-- Section 1: Top Bar, Nav, Hero -->
      <div  class="flex justify-between items-center px-4 py-2 text-white text-xs sm:text-sm font-semibold bg-gradient-to-l from-[#1a1a4d] to-[#9e0a1e] max-w-[100%] mx-auto">
-   <div class="flex items-center space-x-4 space-x-reverse">
-    <a href="../HomePage/HomePage.html"><span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
-     <i class="fas fa-home text-xs sm:text-sm">
-     </i>
-     <span>
-      الرئيسية
-     </span>
-    </span></a>
-    
-    <span class="hidden sm:flex items-center space-x-1 space-x-reverse cursor-pointer hover:underline">
-     <i class="fas fa-phone-alt text-xs sm:text-sm">
-     </i>
-    <a href="../CallUsPage/classus.html"> <span>
-      اتصل بنا ؟
-     </span></a>
-    </span>
-   </div>
+   <div class="flex items-center gap-4 flex-wrap text-xs sm:text-sm font-semibold">
+  <a href="../HomePage/HomePage.html" class="flex items-center gap-1 hover:underline text-white">
+    <i class="fas fa-home"></i>
+    <span>الرئيسية</span>
+  </a>
+
+  <a href="../CallUsPage/classus.html" class="flex items-center gap-1 hover:underline text-white">
+    <i class="fas fa-phone-alt"></i>
+    <span>اتصل بنا ؟</span>
+  </a>
+</div>
+
+
    <div class="flex items-center space-x-2 space-x-reverse">
     <i class="fas fa-search">
     </i>
@@ -152,20 +148,10 @@
       </li>
      </ul>
     </li>
-    <a href="../ApplyPage/Apply.html"><P class="relative group cursor-pointer">
+      <a href="../ApplyPage/Apply.html">
+      <P class="relative group cursor-pointer">
      <span>
       التقديم
-      <!-- <i class="fas fa-chevron-down text-xs">
-      </i> -->
-     <!-- </span>
-     <ul class="absolute right-0 top-full mt-1 bg-white shadow-lg rounded-md py-1 w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-right z-10">
-      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-        
-      </li>
-      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
-       طريقة 2
-      </li>
-     </ul> -->
     </p>
     </a>
     
@@ -184,82 +170,67 @@
       </li>
      </ul>
     </li> -->
-  </p></a>
-  <a href="../ProfilePage/Profile.html"><div class="flex-shrink-0 animate-bounce" style=" position: relative;left: 90vb ;top: 1vw;animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite;">
-    <img alt="شعار الأكاديمية - رمز مبنى أزرق داخل دائرة زرقاء" class="w-12 h-12 sm:w-14 sm:h-14" height="56" src="../HomePage/pics/logo-modified.png" width="56"/>
-   </div>
-  </a>
-  </nav>
-
-<!-- Section two -->
- <section class="w-100 position relative top-full h-screen " >
-      <img class="w-full h-auto object-cover" style="width: 100%;" src="../HomePage/pics/frist.jpg" />
-    <div class="absolute bottom-8 left-8 text-left text-white bg-gradient-to-r from-white/70 via-white/30 to-transparent p-4 rounded-md max-w-[320px]">
-    <p class="text-xs sm:text-sm font-semibold mb-1">
-     Welcome to HomeSchool Academy
-    </p>
-    <h1 class="text-xl sm:text-2xl font-semibold leading-snug mb-1 tracking-wide">
-     YOUR CHILD FUTURE
-     <br/>
-     IS HERE
-    </h1>
-<a href="../Mann7nPage/Mann7n.html">
-        <button class="bg-gradient-to-l from-[#9e0a1e] to-[#1a1a4d] hover:opacity-90 text-white px-6 py-3 rounded-full font-semibold animate-pulse delay-200">
-           اقرأ اكثر <i class="fas fa-arrow-left mr-2"></i>
-        </button></a>
-   </div>
-  </section>
-  <br> <br>
-
-<section class="py-16 px-6 bg-white">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="fade-in-up delay-100">
-        <h2 class="text-3xl font-extrabold mb-4">ليه MY HOMESCHOOL ACADEMY؟</h2>
-        <ul class="list-disc pr-6 text-gray-700 space-y-2">
-          <li>تفاعل أونلاين بمستوى حضوري مع تسجيل الحصص.</li>
-          <li>متابعة يومية واختبارات وخطة لأولياء الأمور.</li>
-          <li>كادر تدريسي مؤهل وخبرات حديثة.</li>
-          <li>دعم نفسي لاكتشاف مواهب الطلاب.</li>
-          <li>تواصل مباشر مع الإدارة والمعلمات.</li>
-          <li>رسوم مناسبة مع تأسيس مجاني للطلاب الجدد.</li>
-        </ul>
-      </div>
-      <div class="fade-in-scale delay-300">
-        <img src="pics/logo.jpg" alt="Logo" class="rounded-xl shadow-lg" />
-      </div>
-    </div>
-  </section>
-
-<!-- Section 2: Why My Homeschool Academy -->
-<!-- <section class="relative min-h-screen flex items-center justify-center px-6 py-12 bg-[#f5f5f5] overflow-hidden">
-  <img 
-    src="pics/sheet-from-notepad-pencils-right.jpg" 
-    alt="خلفية بنقشة بيضاء فاتحة مع ملمس خفيف" 
-    class="absolute inset-0 w-full h-full object-cover  z-0 pointer-events-none" 
-  />
-
-  <div style="position: relative;bottom: 4vw;right: 3vw;" class="relative z-10 max-w-6xl w-full flex flex-col md:flex-row items-center md:items-start gap-8 bg-transparent">
-
-    <div style="position:relative;right: 18vw;" class="text-black max-w-3xl text-sm md:text-base leading-relaxed order-2 md:order-1">
-      <div class="fade-in-up delay-100">
-        <h2 class="text-3xl font-extrabold mb-4">ليه MY HOMESCHOOL ACADEMY؟</h2>
-        <ul class="list-disc pr-6 text-gray-700 space-y-2">
-          <li>تفاعل أونلاين بمستوى حضوري مع تسجيل الحصص.</li>
-          <li>متابعة يومية واختبارات وخطة لأولياء الأمور.</li>
-          <li>كادر تدريسي مؤهل وخبرات حديثة.</li>
-          <li>دعم نفسي لاكتشاف مواهب الطلاب.</li>
-          <li>تواصل مباشر مع الإدارة والمعلمات.</li>
-          <li>رسوم مناسبة مع تأسيس مجاني للطلاب الجدد.</li>
-        </ul>
-      </div>
-
-   <div class="fade-in-scale delay-300 ">
-        <img src="pics/logo.jpg" alt="Logo" class="rounded-xl shadow-lg" />
-      </div>
-    
+  </p>
+</a>
+<a href="../ProfilePage/Profile.html">
+  <div class="animate-bounce relative top-1">
+    <img 
+      src="../HomePage/pics/logo-modified.png" 
+      alt="شعار الأكاديمية - رمز مبنى أزرق داخل دائرة زرقاء"
+      class="w-12 sm:w-12 md:w-12 lg:w-12 h-auto max-w-full" 
+    />
   </div>
-</section> -->
+</a>
 
+  </nav>
+  <!-- Section Two: Hero with Background Image -->
+<section class="relative w-full h-screen overflow-hidden" dir="rtl">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="../HomePage/pics/frist.jpg"
+         alt="Hero Background"
+         class="w-full h-full object-cover object-center" />
+  </div>
+
+  <!-- Overlay Content -->
+  <div class="relative z-10 flex items-end justify-end h-full p-6 sm:p-12">
+    <div class="bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-xl max-w-sm text-right">
+      <p class="text-sm sm:text-base font-semibold text-gray-800 mb-2">
+        Welcome to HomeSchool Academy
+      </p>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 leading-snug mb-4">
+        مستقبل طفلك يبدأ من هنا
+      </h1>
+      <a href="../Mann7nPage/Mann7n.html">
+        <button class="bg-gradient-to-l from-[#9e0a1e] to-[#1a1a4d] hover:opacity-90 text-white px-6 py-3 rounded-full font-semibold animate-pulse">
+          اقرأ أكثر <i class="fas fa-arrow-left mr-2"></i>
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section: Why MY HOMESCHOOL ACADEMY -->
+<section class="py-16 px-6 bg-white" dir="rtl">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="animate-fadeInUp">
+      <h2 class="text-3xl font-extrabold text-blue-900 mb-6">ليه MY HOMESCHOOL ACADEMY؟</h2>
+      <ul class="list-disc pr-6 text-gray-700 space-y-3 leading-relaxed text-sm sm:text-base">
+        <li>تفاعل أونلاين بمستوى حضوري مع تسجيل الحصص.</li>
+        <li>متابعة يومية واختبارات وخطة لأولياء الأمور.</li>
+        <li>كادر تدريسي مؤهل وخبرات حديثة.</li>
+        <li>دعم نفسي لاكتشاف مواهب الطلاب.</li>
+        <li>تواصل مباشر مع الإدارة والمعلمات.</li>
+        <li>رسوم مناسبة مع تأسيس مجاني للطلاب الجدد.</li>
+      </ul>
+    </div>
+    <div class="animate-fadeInScale text-center">
+      <img src="../HomePage/pics/logo.jpg" alt="شعار الأكاديمية"
+           class="rounded-xl shadow-xl w-full max-w-xs mx-auto" />
+    </div>
+  </div>
+</section>
 
     <!-- Latest News -->
   <section class="py-16 px-6 bg-gray-50">
